@@ -1,108 +1,198 @@
 <!doctype html>
 <html lang="en">
+
 <head>
-<meta charset="utf-8">
-<title>YOUR STUDIO | Unity Assets</title>
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="description" content="Unity Asset publisher portfolio, tech specs, and support contact.">
-<meta property="og:title" content="YOUR STUDIO | Unity Assets">
-<meta property="og:description" content="Unity Asset publisher portfolio, tech specs, and support contact.">
-<meta property="og:type" content="website">
-<style>
-:root{
---bg:#0f1221;--card:#171a2e;--line:#2a2f4a;--text:#e9edf6;--muted:#a9b3c9;--link:#8fd3ff;--accent:#5ee6a8
-}
-{box-sizing:border-box}
-body{margin:0;font-family:system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif;background:var(--bg);color:var(--text);line-height:1.6}
-.wrap{max-width:980px;margin:0 auto;padding:28px}
-header{display:flex;justify-content:space-between;align-items:center;margin-bottom:12px}
-nav a{color:var(--link);text-decoration:none;margin-left:16px}
-h1,h2{margin:0 0 10px}
-.muted{color:var(--muted)}
-.card{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:18px 20px;margin:14px 0}
-.grid{display:grid;gap:16px;grid-template-columns:repeat(auto-fit,minmax(280px,1fr))}
-ul{margin:8px 0 0 18px}
-a{color:var(--link);text-decoration:none}
-.btn{display:inline-block;padding:8px 12px;background:var(--accent);color:#062114;border-radius:8px;font-weight:600}
-footer{margin-top:22px;font-size:12px;color:var(--muted);display:flex;justify-content:space-between;flex-wrap:wrap;gap:8px}
-.lang{font-size:13px}
-@media (max-width:520px){header{flex-direction:column;align-items:flex-start} nav{margin-top:8px}}
-</style>
+    <meta charset="utf-8">
+    <title>YOUR STUDIO | Unity Assets</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Unity Asset publisher portfolio, tech specs, and support contact.">
+    <meta property="og:title" content="YOUR STUDIO | Unity Assets">
+    <meta property="og:description" content="Unity Asset publisher portfolio, tech specs, and support contact.">
+    <meta property="og:type" content="website">
+    <style>
+        :root {
+            --bg: #0f1221;
+            --card: #171a2e;
+            --line: #2a2f4a;
+            --text: #e9edf6;
+            --muted: #a9b3c9;
+            --link: #8fd3ff;
+            --accent: #5ee6a8
+        }
+         
+
+        body {
+            margin: 0;
+            font-family: system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
+            background: var(--bg);
+            color: var(--text);
+            line-height: 1.6
+        }
+
+        .wrap {
+            max-width: 980px;
+            margin: 0 auto;
+            padding: 28px
+        }
+
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 12px
+        }
+
+        nav a {
+            color: var(--link);
+            text-decoration: none;
+            margin-left: 16px
+        }
+
+        h1,
+        h2 {
+            margin: 0 0 10px
+        }
+
+        .muted {
+            color: var(--muted)
+        }
+
+        .card {
+            background: var(--card);
+            border: 1px solid var(--line);
+            border-radius: 12px;
+            padding: 18px 20px;
+            margin: 14px 0
+        }
+
+        .grid {
+            display: grid;
+            gap: 16px;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr))
+        }
+
+        ul {
+            margin: 8px 0 0 18px
+        }
+
+        a {
+            color: var(--link);
+            text-decoration: none
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 8px 12px;
+            background: var(--accent);
+            color: #062114;
+            border-radius: 8px;
+            font-weight: 600
+        }
+
+        footer {
+            margin-top: 22px;
+            font-size: 12px;
+            color: var(--muted);
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            gap: 8px
+        }
+
+        .lang {
+            font-size: 13px
+        }
+
+        @media (max-width:520px) {
+            header {
+                flex-direction: column;
+                align-items: flex-start
+            }
+
+            nav {
+                margin-top: 8px
+            }
+        }
+    </style>
 </head>
+
 <body>
-<div class="wrap">
-<header>
-<div>
-<h1>YOUR STUDIO</h1>
-<div class="muted">Unity Asset Publisher • Environments / Props / Tools</div>
-</div>
-<nav>
-<a href="#asset">Asset</a>
-<a href="#about">About</a>
-<a href="#support">Support</a>
-<a href="#docs">Docs</a>
-</nav>
-</header>
-<section id="asset" class="card">
-<h2>Featured Asset</h2>
-<p class="muted">Replace with your current pack information.</p>
-<ul>
-<li>Name: Awesome Pack</li>
-<li>Pipelines: Built-in / URP / HDRP</li>
-<li>Meshes: avg 8k tris (max 15k), total ~120k</li>
-<li>Textures: 2k/4k; Maps: Albedo, Normal, Metallic(R)/Smoothness(A), AO</li>
-<li>Includes: Demo scenes, LODs, Prefabs</li>
-</ul>
-<p>
-<a class="btn" href="#" target="blank" rel="noopener">View Screenshots / Video</a>
-<span class="muted"> or </span>
-<a href="#" target="blank" rel="noopener">Asset Store Page</a>
-</p>
-</section>
-<section class="grid">
-<div id="about" class="card">
-<h2>About</h2>
-<p>Indie publisher focusing on optimized stylized assets for Unity. We care about clean topology, LODs, and thoughtful material setups.</p>
-<p class="lang">中文：独立开发者/工作室，专注 Unity 资源（风格化/高性能）。关注干净拓扑、LOD 阶段、合理材质。</p>
-</div>
-<div id="support" class="card">
-<h2>Support</h2>
-<p>Email: <a href="mailto:support@yourdomain.com">support@yourdomain.com</a></p>
-<p>Response time: 1–3 business days</p>
-<ul>
-<li>Bug reports: Unity version, pipeline, steps to reproduce</li>
-<li>Requests: screenshots and expected results</li>
-</ul>
-</div>
-<div id="docs" class="card">
-<h2>Docs / Links</h2>
-<ul>
-<li><a href="#" target="blank" rel="noopener">Documentation (EN)</a> · <a href="#" target="_blank" rel="noopener">文档（中文）</a></li>
-<li><a href="#" target="blank" rel="noopener">Changelog</a></li>
-<li><a href="/privacy" target="blank" rel="noopener">Privacy Policy</a></li>
-</ul>
-</div>
-</section>
-<section class="card">
-<h2>Tech Specs Snapshot</h2>
-<ul>
-<li>Unity: 2021.3+ (LTS recommended)</li>
-<li>Pipelines: Built-in / URP 12+ / HDRP 12+</li>
-<li>Textures: PNG/TGA, sRGB/off by map type; Normal maps imported as Normal</li>
-<li>Folders: Assets/YourStudio/YourPackage/...</li>
-</ul>
-</section>
-<footer>
-<div>© <span id="year"></span> YOUR STUDIO. All rights reserved.</div>
-<div>
-<a href="/privacy">Privacy</a>
-<span class="muted"> · </span>
-<a href="#" target="blank" rel="noopener">Contact</a>
-</div>
-</footer>
-</div>
-<script>
-document.getElementById('year').textContent = new Date().getFullYear();
-</script>
+    <div class="wrap">
+        <header>
+            <div>
+                <h1>YOUR STUDIO</h1>
+                <div class="muted">Unity Asset Publisher • Environments / Props / Tools</div>
+            </div>
+            <nav>
+                <a href="#asset">Asset</a>
+                <a href="#about">About</a>
+                <a href="#support">Support</a>
+                <a href="#docs">Docs</a>
+            </nav>
+        </header>
+        <section id="asset" class="card">
+            <h2>Featured Asset</h2>
+            <p class="muted">Replace with your current pack information.</p>
+            <ul>
+                <li>Name: Awesome Pack</li>
+                <li>Pipelines: Built-in / URP / HDRP</li>
+                <li>Meshes: avg 8k tris (max 15k), total ~120k</li>
+                <li>Textures: 2k/4k; Maps: Albedo, Normal, Metallic(R)/Smoothness(A), AO</li>
+                <li>Includes: Demo scenes, LODs, Prefabs</li>
+            </ul>
+            <p>
+                <a class="btn" href="#" target="blank" rel="noopener">View Screenshots / Video</a>
+                <span class="muted"> or </span>
+                <a href="#" target="blank" rel="noopener">Asset Store Page</a>
+            </p>
+        </section>
+        <section class="grid">
+            <div id="about" class="card">
+                <h2>About</h2>
+                <p>Indie publisher focusing on optimized stylized assets for Unity. We care about clean topology, LODs,
+                    and thoughtful material setups.</p>
+                <p class="lang">中文：独立开发者/工作室，专注 Unity 资源（风格化/高性能）。关注干净拓扑、LOD 阶段、合理材质。</p>
+            </div>
+            <div id="support" class="card">
+                <h2>Support</h2>
+                <p>Email: <a href="mailto:support@yourdomain.com">support@yourdomain.com</a></p>
+                <p>Response time: 1–3 business days</p>
+                <ul>
+                    <li>Bug reports: Unity version, pipeline, steps to reproduce</li>
+                    <li>Requests: screenshots and expected results</li>
+                </ul>
+            </div>
+            <div id="docs" class="card">
+                <h2>Docs / Links</h2>
+                <ul>
+                    <li><a href="#" target="blank" rel="noopener">Documentation (EN)</a> · <a href="#" target="_blank"
+                            rel="noopener">文档（中文）</a></li>
+                    <li><a href="#" target="blank" rel="noopener">Changelog</a></li>
+                    <li><a href="/privacy" target="blank" rel="noopener">Privacy Policy</a></li>
+                </ul>
+            </div>
+        </section>
+        <section class="card">
+            <h2>Tech Specs Snapshot</h2>
+            <ul>
+                <li>Unity: 2021.3+ (LTS recommended)</li>
+                <li>Pipelines: Built-in / URP 12+ / HDRP 12+</li>
+                <li>Textures: PNG/TGA, sRGB/off by map type; Normal maps imported as Normal</li>
+                <li>Folders: Assets/YourStudio/YourPackage/...</li>
+            </ul>
+        </section>
+        <footer>
+            <div>© <span id="year"></span> YOUR STUDIO. All rights reserved.</div>
+            <div>
+                <a href="/privacy">Privacy</a>
+                <span class="muted"> · </span>
+                <a href="#" target="blank" rel="noopener">Contact</a>
+            </div>
+        </footer>
+    </div>
+    <script>
+        document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
 </body>
+
 </html>
